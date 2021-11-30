@@ -334,7 +334,7 @@ span {
   order: 2;
   width: 161px;
   height: 48px;
-  margin-top: 20px;
+  margin-top: 24px;
   color: white;
   font-size: 17px;
   border: none;
@@ -371,7 +371,7 @@ span {
 }
 
 .divider {
-  width: 317px;
+  width: 100%;
 }
 
 .stacks span,
