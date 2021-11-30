@@ -259,12 +259,17 @@ li .languages {
 .card-description {
   color: white;
   font-size: 16px;
+  font-family: 'inter', sans-serif;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .new {
   color: white;
   font-size: 32px;
   margin-top: 40px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
 }
 
 .card-btn {
@@ -330,7 +335,6 @@ span {
   width: 161px;
   height: 48px;
   margin-top: 20px;
-  margin-bottom: 100px;
   color: white;
   font-size: 17px;
   border: none;
@@ -362,8 +366,12 @@ span {
   margin: 0 auto;
 }
 
+.illustrate {
+  margin-left: 296px;
+}
+
 .divider {
-  margin-left: 40px;
+  width: 317px;
 }
 
 .stacks span,
