@@ -313,7 +313,7 @@ span {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background: url(images/Rectangle\ 73.png);
+  background: url(./images/Rectanglebg.png);
   width: 100%;
   height: 1901px;
 }
@@ -360,6 +360,10 @@ span {
   width: 317px;
   color: white;
   margin: 0 auto;
+}
+
+.divider {
+  margin-left: 40px;
 }
 
 .stacks span,
