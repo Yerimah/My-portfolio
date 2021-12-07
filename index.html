@@ -15,9 +15,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>My Portfolio</title>
+    <title>Daniel Yerimah's Portfolio</title>
 </head>
 <body>
+    <nav>
+    <div class="topnav">
+        <a class="logo" href="#">Yerimah</a>   
+        <div>
+            <ul class="menu">
+                <li class="menu-link"><a href="#">Portfolio</a></li>
+                <li class="menu-link2"><a href="#">About</a></li>
+                <li class="menu-link3"><a href="#">Contact</a></li>
+                <li class="mail-link"><img src="./images/Union.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
     <header>
         <div class="status-bar"></div>
         
@@ -79,6 +92,7 @@
         </div>
         <div class="project-1">
             <img class="w-image" src="./images/placeholder.png" alt=""/>
+            <div class="right-block">
             <h2>Multi-Post Stories</h2>
             <p class="p-description">A daily selection of privately personalized reads; no accounts or sign-ups required. 
                 has been the industry's standard dummy text ever since the 1500s, 
@@ -90,7 +104,8 @@
                     <li><a href="@" class="btn btn-card">bootstrap</a></li>
                     <li><a href="@" class="btn btn-card">Ruby</a></li>
                 </ul>
-                <button class="p-btn">See Project</button>
+                <button type="button" class="p-btn">See Project</button>
+                </div>
             </div>
 
             <div class="card-works">
@@ -106,7 +121,7 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                    <button class="card-btn">See Project</button>
+                    <button type="button" class="card-btn">See Project</button>
                 </div>
 
             
@@ -122,7 +137,7 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                            <button class="card-btn">See Project</button>
+                            <button type="button" class="card-btn">See Project</button>
                 </div>    
 
                 <div class="card item3">
@@ -137,7 +152,7 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                            <button class="card-btn">See Project</button>
+                            <button type="button" class="card-btn">See Project</button>
                 </div>
 
                 <div class="card item4">
@@ -152,7 +167,7 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                            <button class="card-btn">See Project</button>
+                            <button type="button" class="card-btn">See Project</button>
                 </div>
 
                 <div class="card item5">
@@ -167,7 +182,7 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                            <button class="card-btn">See Project</button>
+                            <button type="button" class="card-btn">See Project</button>
                 </div>
 
                 <div class="card item6">
@@ -182,10 +197,10 @@
                                 <li><a href="@" class="btn btn-car">Ruby</a></li>
                             </ul>
                     </div>
-                            <button class="card-btn">See Project</button>
+                            <button type="button" class="card-btn">See Project</button>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
         <section class="about-section">
@@ -195,7 +210,7 @@
                     feature or website Look through some of my work and experience! 
                     If you like what you see and have a project you need coded, 
                     don’t hestiate to contact me.</p>
-                    <button class="abt-btn">Get My Resume</button>
+                    <button type="button" class="abt-btn">Get My Resume</button>
             </div>
             <div class="about-2 flex">
                 <div class="stacks">
@@ -229,5 +244,60 @@
                 </div>
             </div>
         </section>
+
+        <footer>
+        <div class="contact-form">
+            <p class="p-contact">I'm always interested in hearing about 
+                new projects, so if you'd like to chat 
+                please get in.</p>
+            
+        <form action="https://formspree.io/f/mlezeewv" method="POST">
+            <input 
+            type="text" 
+            id="name" 
+            placeholder="Full name" 
+            maxlength="30" 
+            name="full-name" required>
+            
+            <input 
+            type="email" 
+            id="email" 
+            placeholder="Email address" 
+            name="email" required>
+            
+            <textarea 
+            name="message" 
+            id="text" 
+            cols="30" rows="10" 
+            placeholder="Enter text here" 
+            maxlength="500" required></textarea>
+
+            <button type="submit" class="contact-btn">Get in touch</button>
+        </form>
+
+        <ul class="contact-icons">
+            <li>
+                <a href="#"><img src="./images/darkgit.png" alt=""/></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/darklinked.png" alt=""/></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/darkangel.png" alt=""/></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/Disabled.png" alt=""/></a>
+            </li>
+
+            <li>
+                <a href="#"><img src="./images/darkmedium.png" alt=""/></a>
+            </li>
+        </ul>
+          <hr>
+        </div>
+        </footer>
 </body>
 </html>
