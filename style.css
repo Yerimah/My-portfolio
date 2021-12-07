@@ -519,6 +519,12 @@ input {
   border: none;
   align-items: center;
   margin-bottom: 124px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  opacity: 0.89;
+  transition: 0s;
 }
 
 form {
