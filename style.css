@@ -454,7 +454,7 @@ li {
 }
 
 .contact-form {
-  padding: 100px 60px ;
+  padding: 100px 60px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -477,7 +477,6 @@ input {
   border-width: 0 0 1px;
   border-color: rgba(219, 216, 215, 1);
   font-family: 'Inter', sans-serif;
-  
 }
 
 #name {
