@@ -452,3 +452,21 @@ li {
   font-size: 32px;
   line-height: 44px;
 }
+
+.contact-form {
+  padding: 100px 60px ;
+  display: flex;
+  flex-flow: column;
+}
+
+p.p-contact {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: rgba(23, 43, 77, 1);
+  width: 329px;
+  margin-bottom: 60px;
+  
+}
