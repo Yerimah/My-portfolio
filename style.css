@@ -533,4 +533,11 @@ form {
   padding-top: 15px;
 }
 
+hr {
+  width: 134px;
+  height: 5px;
+  align-self: center;
+  border-radius: 10px;
+  background-color: black;
+}
 
