@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.topnav {
+  display: none;
+}
+
 body {
   max-width: 480px;
   font-family: "Poppins", sans-serif;
