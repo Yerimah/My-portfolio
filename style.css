@@ -457,6 +457,7 @@ li {
   padding: 100px 60px ;
   display: flex;
   flex-flow: column;
+  justify-content: center;
 }
 
 p.p-contact {
@@ -468,5 +469,54 @@ p.p-contact {
   color: rgba(23, 43, 77, 1);
   width: 329px;
   margin-bottom: 60px;
+  margin-left: 20px;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: rgba(219, 216, 215, 1);
+  font-family: 'Inter', sans-serif;
   
+}
+
+#name {
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+#email {
+  width: 327px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+#text {
+  width: 327px;
+  height: 114px;
+  border: none;
+  background-color: rgba(251, 248, 247, 1);
+  margin-bottom: 24px;
+}
+
+::placeholder {
+  padding: 10px;
+}
+
+.contact-btn {
+  width: 131px;
+  height: 48px;
+  background-color: rgba(255, 107, 0, 1);
+  color: white;
+  font-size: 17px;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  align-items: center;
+}
+
+form {
+  text-align: center;
 }
