@@ -535,6 +535,7 @@ form {
 
 hr {
   width: 134px;
+  top: 20px;
   height: 5px;
   align-self: center;
   border-radius: 10px;
