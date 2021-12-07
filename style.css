@@ -498,6 +498,10 @@ input {
   border: none;
   background-color: rgba(251, 248, 247, 1);
   margin-bottom: 24px;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 ::placeholder {
@@ -515,8 +519,18 @@ input {
   line-height: 24px;
   border: none;
   align-items: center;
+  margin-bottom: 124px;
 }
 
 form {
   text-align: center;
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(223, 225, 230, 1);
+  padding-top: 15px;
+}
+
+
