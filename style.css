@@ -467,7 +467,7 @@ p.p-contact {
   line-height: 44px;
   text-align: center;
   color: rgba(23, 43, 77, 1);
-  /* width: 329px; */
+  width: 329px;
   margin-bottom: 60px;
   margin-left: 20px;
 }
@@ -992,14 +992,16 @@ hr {
 
   footer {
     display: flex;
-    width: 1156px;
+    width: 1349px;
     flex-flow: row;
     justify-content: space-around;
   }
 
   .contact-form {
-    display: flex;
-    flex-flow: row wrap; 
+    display: flex; 
+    flex-flow: row wrap;
+    width: 100%;
+
   }
   
   p.p-contact {
@@ -1007,10 +1009,27 @@ hr {
   }
 
   form {
-    width: 300px;
+    display: flex;
+    flex-flow: column;
+    width: 54%;
+    margin-left: 20px;
+    margin-bottom: 150px;
   }
 
-  hr {
+#name {
+  width: 96%;  
+}
+
+#email {
+  width: 96%;
+}
+
+#text {
+  width: 96%;
+}
+
+  #bottom {
     display: none;
   }
+
 }
