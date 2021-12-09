@@ -467,7 +467,7 @@ p.p-contact {
   line-height: 44px;
   text-align: center;
   color: rgba(23, 43, 77, 1);
-  width: 329px;
+  /* width: 329px; */
   margin-bottom: 60px;
   margin-left: 20px;
 }
@@ -778,16 +778,6 @@ hr {
     flex: 1;
   }
 
-  .p-btn {
-    background: rgba(255, 107, 0, 1);
-    color: white;
-    font-size: 17px;
-    border: none;
-    height: 48px;
-    width: 124px;
-    font-weight: bold;
-  }
-
   .card-works {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -897,6 +887,7 @@ hr {
     flex-direction: column;
     background-color: rgba(28, 26, 25, 1);
     width: 1349px;
+    
   }
 
   .about-descript {
@@ -924,7 +915,7 @@ hr {
 
   .about {
     width: 100%;
-    padding: 120px 24px;
+    padding: 120px 142px;
     background-image: url(./images/aboutvec.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -997,5 +988,29 @@ hr {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  footer {
+    display: flex;
+    width: 1156px;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-flow: row wrap; 
+  }
+  
+  p.p-contact {
+    width: 365px;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  hr {
+    display: none;
   }
 }
