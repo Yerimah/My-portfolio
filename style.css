@@ -152,6 +152,11 @@ h1 {
   line-height: 24px;
   text-decoration: none;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.btn-car:hover {
+  transform: scale(1.1);
 }
 
 .btn-card:hover {
@@ -172,6 +177,11 @@ h1 {
   width: 100%;
   padding: 0;
   margin: 0;
+  transition: 1s;
+}
+
+.w-image:hover {
+  transform: scale(1.1);
 }
 
 h2 {
@@ -292,6 +302,15 @@ li .languages {
   font-size: 17px;
   border: none;
   font-weight: bold;
+}
+
+
+.card-btn:hover {background-color: rgb(194, 105, 42)}
+
+.card-btn:active {
+  background-color: rgba(255, 107, 0, 1);
+  box-shadow: 0 5px rgb(158, 153, 153);
+  transform: translateY(4px);
 }
 
 .lang {
