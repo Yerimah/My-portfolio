@@ -304,8 +304,9 @@ li .languages {
   font-weight: bold;
 }
 
-
-.card-btn:hover {background-color: rgb(194, 105, 42)}
+.card-btn:hover {
+  background-color: rgb(194, 105, 42);
+}
 
 .card-btn:active {
   background-color: rgba(255, 107, 0, 1);
