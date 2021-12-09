@@ -887,7 +887,6 @@ hr {
     flex-direction: column;
     background-color: rgba(28, 26, 25, 1);
     width: 1349px;
-    
   }
 
   .about-descript {
@@ -949,7 +948,6 @@ hr {
     padding-top: 0;
     border: none;
     margin-bottom: 60px;
-
   }
 
   .frame ul {
@@ -998,12 +996,11 @@ hr {
   }
 
   .contact-form {
-    display: flex; 
+    display: flex;
     flex-flow: row wrap;
     width: 100%;
-
   }
-  
+
   p.p-contact {
     width: 365px;
   }
@@ -1016,17 +1013,17 @@ hr {
     margin-bottom: 150px;
   }
 
-#name {
-  width: 96%;  
-}
+  #name {
+    width: 96%;
+  }
 
-#email {
-  width: 96%;
-}
+  #email {
+    width: 96%;
+  }
 
-#text {
-  width: 96%;
-}
+  #text {
+    width: 96%;
+  }
 
   #bottom {
     display: none;
@@ -1037,8 +1034,7 @@ hr {
     height: 1px;
   }
 
-.contact-icons {
-  border-top: none;
-}
-
+  .contact-icons {
+    border-top: none;
+  }
 }
