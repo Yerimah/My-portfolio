@@ -155,6 +155,8 @@ h1 {
 }
 
 .btn-card:hover {
+  background-color: chocolate;
+  color: white;
   opacity: 0.9;
 }
 
@@ -206,6 +208,12 @@ li .languages {
   height: 48px;
   width: 124px;
   font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.p-btn:hover {
+  background-color: bisque;
+  color: black;
 }
 
 .item1 {
@@ -343,6 +351,12 @@ span {
   font-size: 17px;
   border: none;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.abt-btn:hover {
+  background-color: bisque;
+  color: black;
 }
 
 .about {
