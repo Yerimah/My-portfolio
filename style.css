@@ -16,7 +16,6 @@
 }
 
 body {
-  max-width: 480px;
   font-family: "Poppins", sans-serif;
   background: white;
 }
@@ -83,7 +82,7 @@ h1 {
 .description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: white;
@@ -91,7 +90,7 @@ h1 {
 
 .headline {
   display: flex;
-  background: hsl(20, 6%, 10%) url(./images/bgvector.svg) no-repeat;
+  background: rgb(27, 25, 24) url(./images/bgvector.svg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 956px;
@@ -109,6 +108,7 @@ h1 {
   width: 200px;
   height: 40px;
   margin-top: 25px;
+  padding: 0;
   list-style: none;
   justify-content: space-around;
 }
@@ -126,6 +126,7 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   padding: 20px 0;
+  /* margin-top: 120px; */
 }
 
 .btn-card {
@@ -160,9 +161,7 @@ h1 {
 
 .container {
   display: grid;
-  margin: 0 auto;
-  gap: 50px 0;
-  width: 317px;
+  gap: 24px 0;
 }
 
 .w-image {
@@ -186,10 +185,9 @@ h2 {
 
 .languages {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin-bottom: 10px;
-  width: 236px;
+  padding: 0;
   background: white;
   align-items: center;
 }
@@ -208,41 +206,20 @@ li .languages {
   font-weight: bold;
 }
 
-.item1 {
-  grid-area: card1;
+.p-btn:hover {
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
 }
 
-.item2 {
-  grid-area: card2;
-}
-
-.item3 {
-  grid-area: card3;
-}
-
-.item4 {
-  grid-area: card4;
-}
-
-.item5 {
-  grid-area: card5;
-}
-
-.item6 {
-  grid-area: card6;
+.p-btn:active {
+  background-color:  rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 .card-works {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "card1 card1 card1 card1 card1 card1"
-    "card2 card2 card2 card2 card2 card2"
-    "card3 card3 card3 card3 card3 card3"
-    "card4 card4 card4 card4 card4 card4"
-    "card5 card5 card5 card5 card5 card5"
-    "card6 card6 card6 card6 card6 card6";
   grid-gap: 20px;
 }
 
@@ -250,14 +227,12 @@ li .languages {
   display: flex;
   flex-direction: column;
   background: url(./images/portfolio.png) no-repeat;
-  width: 317px;
-  height: 386px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  background-size: cover;
 }
 
 .text-block {
-  padding: 38px 16px;
+  padding: 0 16px;
+  padding-top: 110px;
 }
 
 .card-description {
@@ -291,6 +266,7 @@ li .languages {
   flex-direction: row;
   margin-right: 10px;
   width: 236px;
+  padding: 0;
   list-style: none;
 
   /* background: rgba(255, 255, 255, 0.24); */
@@ -306,10 +282,7 @@ li .lang {
 }
 
 .title {
-  width: 315px;
-  left: 24px;
-  top: 120px;
-  align-items: center;
+  text-align: center;
 }
 
 span {
@@ -335,7 +308,7 @@ span {
 .abt-btn {
   background: rgba(255, 107, 0, 1);
   order: 2;
-  width: 161px;
+  padding: 12px;
   height: 48px;
   margin-top: 24px;
   margin-bottom: 70px;
@@ -343,6 +316,17 @@ span {
   font-size: 17px;
   border: none;
   font-weight: bold;
+}
+
+.abt-btn:hover {
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
+}
+
+.abt-btn:active {
+  background-color:  rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 .about {
@@ -356,8 +340,7 @@ span {
 .spaced {
   font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 72px;
-  width: 327px;
+  font-size: 70px;
   line-height: 88px;
   color: hsl(25, 100%, 50%);
   height: 79px;
@@ -369,7 +352,7 @@ span {
   align-items: center;
   padding: 0 24px;
   padding-bottom: 120px;
-  width: 100%;
+  gap: 20px;
   color: white;
 }
 
@@ -386,16 +369,12 @@ span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  margin: 20px auto;
 }
 
 .stacks ul,
 li {
   list-style: none;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 .frame ul {
@@ -416,9 +395,6 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  margin: 20px auto;
 }
 
 .skills ul,
@@ -454,7 +430,7 @@ li {
 }
 
 .contact-form {
-  padding: 100px 60px;
+  padding: 120px 24px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -467,9 +443,7 @@ p.p-contact {
   line-height: 44px;
   text-align: center;
   color: rgba(23, 43, 77, 1);
-  width: 329px;
-  margin-bottom: 60px;
-  margin-left: 20px;
+  margin: 60px 0;
 }
 
 input {
@@ -477,24 +451,21 @@ input {
   border-width: 0 0 1px;
   border-color: rgba(219, 216, 215, 1);
   font-family: 'Inter', sans-serif;
+  width: 100%;
+  padding: 16px;
 }
 
 #name {
-  width: 327px;
-  height: 48px;
   margin-bottom: 24px;
 }
 
 #email {
-  width: 327px;
-  height: 48px;
   margin-bottom: 24px;
 }
 
 #text {
-  width: 327px;
-  height: 114px;
   border: none;
+  width: 100%;
   background-color: rgba(251, 248, 247, 1);
   margin-bottom: 24px;
   font-family: 'inter', sans-serif;
@@ -508,8 +479,7 @@ input {
 }
 
 .contact-btn {
-  width: 131px;
-  height: 48px;
+  padding: 14px;
   background-color: rgba(255, 107, 0, 1);
   color: white;
   font-size: 17px;
@@ -524,8 +494,14 @@ input {
 }
 
 .contact-btn:hover {
-  background-color: bisque;
-  color: black;
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
+}
+
+.contact:active {
+  background-color:  rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 form {
@@ -551,11 +527,17 @@ hr {
 .title hr {
   width: 100%;
   height: 1px;
+  margin-bottom: 60px;
+  margin-top: 24px;
+}
+
+.lastline {
+  display: none;
 }
 
 /* desktop-version */
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 992px) {
   .navbar {
     display: none;
   }
@@ -621,7 +603,6 @@ hr {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 1349px;
     background-color: rgb(60, 58, 57);
     height: 72px;
   }
@@ -656,23 +637,28 @@ hr {
 
   .headline {
     display: flex;
-    background: rgba(28, 26, 1) url(./images/Illustration-header.png) no-repeat;
+    background: rgb(27, 25, 24) url(./images/Illustration-header.png) no-repeat;
     background-position: right;
     height: 798px;
     padding: 0;
-    width: 1349px;
     margin: auto;
   }
 
   .hero {
     padding: 143px;
+    position: relative;
   }
 
+.social {
+  position: absolute;
+  left: 40px;
+  top: 143px;
+  transform: translateY(200%);
+}
+
   .social-icons {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    left: 40px;
     bottom: 187px;
   }
 
@@ -681,16 +667,15 @@ hr {
   }
 
   /* work-section */
-
+ 
   .work-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 0 143px;
+    padding: 120px;
   }
 
   .work-header {
-    width: 315px;
     font-size: 40px;
     font-weight: 400;
     font-family: "Crete Round", serif;
@@ -730,9 +715,7 @@ hr {
 
   .container {
     display: grid;
-    margin: 0 auto;
     gap: 50px 0;
-    width: 317px;
   }
 
   .project-1 {
@@ -781,12 +764,7 @@ hr {
   .card-works {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "card1 card2 card3"
-      "card4 card5 card6";
     gap: 20px;
-    margin-bottom: 130px;
   }
 
   .card {
@@ -795,7 +773,6 @@ hr {
     background: none;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     margin-bottom: 40px;
   }
 
@@ -873,7 +850,7 @@ hr {
 
   .title hr {
     height: 1px;
-    width: 70%;
+    
   }
 
   span {
@@ -886,7 +863,6 @@ hr {
     display: flex;
     flex-direction: column;
     background-color: rgba(28, 26, 25, 1);
-    width: 1349px;
   }
 
   .about-descript {
@@ -895,14 +871,12 @@ hr {
     font-size: 20px;
     margin-top: 24px;
     line-height: 32px;
-    width: 566px;
     top: 232px;
   }
 
   .abt-btn {
     background: rgba(255, 107, 0, 1);
     order: 2;
-    width: 161px;
     height: 48px;
     margin-top: 24px;
     margin-bottom: 70px;
@@ -914,17 +888,17 @@ hr {
 
   .about {
     width: 100%;
-    padding: 120px 142px;
+    /* padding: 120px 142px; */
     background-image: url(./images/aboutvec.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
+    background-size: 40% 50%;
   }
 
   .spaced {
     font-family: 'Crete Round', serif;
     font-weight: 400;
     font-size: 72px;
-    width: 327px;
     line-height: 88px;
     color: hsl(25, 100%, 50%);
     height: 79px;
@@ -934,7 +908,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 120px 24px;
+    padding: 120px;
     width: 100%;
     color: white;
     border-top: 1px solid white;
@@ -944,26 +918,31 @@ hr {
     width: 100%;
   }
 
+  .abt-content {
+    width: 40%;
+    padding-left: 80px;
+  }
+
   .stacks {
     padding-top: 0;
     border: none;
     margin-bottom: 60px;
   }
 
+  .stacks ul {
+    align-items: flex-start;
+  }
+
   .frame ul {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    margin: 20px auto;
   }
 
   .skills ul {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    width: 200px;
     margin: 20px auto;
   }
 
@@ -990,7 +969,6 @@ hr {
 
   footer {
     display: flex;
-    width: 1349px;
     flex-flow: row;
     justify-content: space-around;
   }
@@ -1038,3 +1016,4 @@ hr {
     border-top: none;
   }
 }
+*/
