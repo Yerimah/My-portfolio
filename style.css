@@ -152,9 +152,16 @@ h1 {
   line-height: 24px;
   text-decoration: none;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.btn-car:hover {
+  transform: scale(1.1);
 }
 
 .btn-card:hover {
+  background-color: chocolate;
+  color: white;
   opacity: 0.9;
 }
 
@@ -168,6 +175,11 @@ h1 {
   width: 100%;
   padding: 0;
   margin: 0;
+  transition: 1s;
+}
+
+.w-image:hover {
+  transform: scale(1.1);
 }
 
 h2 {
@@ -203,6 +215,12 @@ li .languages {
   height: 48px;
   width: 124px;
   font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.p-btn:hover {
+  background-color: bisque;
+  color: black;
 }
 
 .p-btn:hover {
@@ -266,6 +284,13 @@ li .languages {
   border: 2px solid rgb(245, 88, 0);
 }
 
+.card-btn:active {
+  background-color: rgba(255, 107, 0, 1);
+  box-shadow: 0 5px rgb(158, 153, 153);
+  transform: translateY(4px);
+
+}
+
 .lang {
   display: flex;
   flex-direction: row;
@@ -319,6 +344,12 @@ span {
   font-size: 17px;
   border: none;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.abt-btn:hover {
+  background-color: bisque;
+  color: black;
 }
 
 .abt-btn:hover {
