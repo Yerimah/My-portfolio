@@ -91,12 +91,10 @@ h1 {
 .headline {
   display: flex;
   background: rgb(27, 25, 24) url(./images/bgvector.svg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 956px;
+  background-position: 100% 100%;
+  height: 628px;
   padding: 0;
   width: 100%;
-  margin: auto;
 }
 
 .hero {
@@ -126,6 +124,7 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   padding: 20px 0;
+
   /* margin-top: 120px; */
 }
 
@@ -213,7 +212,7 @@ li .languages {
 }
 
 .p-btn:active {
-  background-color:  rgb(224, 83, 4);
+  background-color: rgb(224, 83, 4);
   color: rgba(255, 245, 224);
 }
 
@@ -259,6 +258,17 @@ li .languages {
   font-size: 17px;
   border: none;
   font-weight: bold;
+}
+
+.card-btn:hover {
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
+}
+
+.card-btn:active {
+  background-color: rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 .lang {
@@ -325,7 +335,7 @@ span {
 }
 
 .abt-btn:active {
-  background-color:  rgb(224, 83, 4);
+  background-color: rgb(224, 83, 4);
   color: rgba(255, 245, 224);
 }
 
@@ -500,7 +510,7 @@ input {
 }
 
 .contact:active {
-  background-color:  rgb(224, 83, 4);
+  background-color: rgb(224, 83, 4);
   color: rgba(255, 245, 224);
 }
 
@@ -649,12 +659,12 @@ hr {
     position: relative;
   }
 
-.social {
-  position: absolute;
-  left: 40px;
-  top: 143px;
-  transform: translateY(200%);
-}
+  .social {
+    position: absolute;
+    left: 40px;
+    top: 143px;
+    transform: translateY(200%);
+  }
 
   .social-icons {
     display: flex;
@@ -667,7 +677,7 @@ hr {
   }
 
   /* work-section */
- 
+
   .work-section {
     display: flex;
     flex-direction: column;
@@ -850,7 +860,9 @@ hr {
 
   .title hr {
     height: 1px;
-    
+    width: 64%;
+    margin-left: 20px;
+    margin-bottom: 43px;
   }
 
   span {
@@ -862,7 +874,7 @@ hr {
   .about-section {
     display: flex;
     flex-direction: column;
-    background-color: rgba(28, 26, 25, 1);
+    background-color: rgba(27, 25, 24);
   }
 
   .about-descript {
@@ -888,7 +900,6 @@ hr {
 
   .about {
     width: 100%;
-    /* padding: 120px 142px; */
     background-image: url(./images/aboutvec.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
@@ -975,18 +986,22 @@ hr {
 
   .contact-form {
     display: flex;
-    flex-flow: row wrap;
+
+    /* flex-flow: row wrap; */
     width: 100%;
+    padding: 120px;
   }
 
   p.p-contact {
-    width: 365px;
+    margin: 0;
+    width: 54%;
+    text-align: start;
   }
 
   form {
     display: flex;
     flex-flow: column;
-    width: 54%;
+    width: 80%;
     margin-left: 20px;
     margin-bottom: 150px;
   }
@@ -1001,6 +1016,7 @@ hr {
 
   #text {
     width: 96%;
+    height: 98px;
   }
 
   #bottom {
@@ -1012,8 +1028,14 @@ hr {
     height: 1px;
   }
 
-  .contact-icons {
-    border-top: none;
+  .contact-btn {
+    width: 122px;
+    height: 48px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-section-01 {
+    display: flex;
   }
 }
-*/
