@@ -16,7 +16,6 @@
 }
 
 body {
-  max-width: 480px;
   font-family: "Poppins", sans-serif;
   background: white;
 }
@@ -83,7 +82,7 @@ h1 {
 .description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: white;
@@ -91,13 +90,11 @@ h1 {
 
 .headline {
   display: flex;
-  background: hsl(20, 6%, 10%) url(./images/bgvector.svg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 956px;
+  background: rgb(27, 25, 24) url(./images/bgvector.svg) no-repeat;
+  background-position: 100% 100%;
+  height: 628px;
   padding: 0;
   width: 100%;
-  margin: auto;
 }
 
 .hero {
@@ -109,6 +106,7 @@ h1 {
   width: 200px;
   height: 40px;
   margin-top: 25px;
+  padding: 0;
   list-style: none;
   justify-content: space-around;
 }
@@ -126,6 +124,8 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   padding: 20px 0;
+
+  /* margin-top: 120px; */
 }
 
 .btn-card {
@@ -167,9 +167,7 @@ h1 {
 
 .container {
   display: grid;
-  margin: 0 auto;
-  gap: 50px 0;
-  width: 317px;
+  gap: 24px 0;
 }
 
 .w-image {
@@ -198,10 +196,9 @@ h2 {
 
 .languages {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin-bottom: 10px;
-  width: 236px;
+  padding: 0;
   background: white;
   align-items: center;
 }
@@ -222,45 +219,19 @@ li .languages {
 }
 
 .p-btn:hover {
-  background-color: bisque;
-  color: black;
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
 }
 
-.item1 {
-  grid-area: card1;
-}
-
-.item2 {
-  grid-area: card2;
-}
-
-.item3 {
-  grid-area: card3;
-}
-
-.item4 {
-  grid-area: card4;
-}
-
-.item5 {
-  grid-area: card5;
-}
-
-.item6 {
-  grid-area: card6;
+.p-btn:active {
+  background-color: rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 .card-works {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "card1 card1 card1 card1 card1 card1"
-    "card2 card2 card2 card2 card2 card2"
-    "card3 card3 card3 card3 card3 card3"
-    "card4 card4 card4 card4 card4 card4"
-    "card5 card5 card5 card5 card5 card5"
-    "card6 card6 card6 card6 card6 card6";
   grid-gap: 20px;
 }
 
@@ -268,14 +239,12 @@ li .languages {
   display: flex;
   flex-direction: column;
   background: url(./images/portfolio.png) no-repeat;
-  width: 317px;
-  height: 386px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  background-size: cover;
 }
 
 .text-block {
-  padding: 38px 16px;
+  padding: 0 16px;
+  padding-top: 110px;
 }
 
 .card-description {
@@ -305,7 +274,9 @@ li .languages {
 }
 
 .card-btn:hover {
-  background-color: rgb(194, 105, 42);
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
 }
 
 .card-btn:active {
@@ -319,9 +290,8 @@ li .languages {
   flex-direction: row;
   margin-right: 10px;
   width: 236px;
+  padding: 0;
   list-style: none;
-
-  /* background: rgba(255, 255, 255, 0.24); */
   align-items: center;
   color: white;
   margin-top: 10px;
@@ -334,10 +304,7 @@ li .lang {
 }
 
 .title {
-  width: 315px;
-  left: 24px;
-  top: 120px;
-  align-items: center;
+  text-align: center;
 }
 
 span {
@@ -363,7 +330,7 @@ span {
 .abt-btn {
   background: rgba(255, 107, 0, 1);
   order: 2;
-  width: 161px;
+  padding: 12px;
   height: 48px;
   margin-top: 24px;
   margin-bottom: 70px;
@@ -375,8 +342,14 @@ span {
 }
 
 .abt-btn:hover {
-  background-color: bisque;
-  color: black;
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
+}
+
+.abt-btn:active {
+  background-color: rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 .about {
@@ -390,8 +363,7 @@ span {
 .spaced {
   font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 72px;
-  width: 327px;
+  font-size: 70px;
   line-height: 88px;
   color: hsl(25, 100%, 50%);
   height: 79px;
@@ -403,7 +375,7 @@ span {
   align-items: center;
   padding: 0 24px;
   padding-bottom: 120px;
-  width: 100%;
+  gap: 20px;
   color: white;
 }
 
@@ -420,16 +392,12 @@ span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  margin: 20px auto;
 }
 
 .stacks ul,
 li {
   list-style: none;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 .frame ul {
@@ -450,9 +418,6 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  margin: 20px auto;
 }
 
 .skills ul,
@@ -488,7 +453,7 @@ li {
 }
 
 .contact-form {
-  padding: 100px 60px;
+  padding: 120px 24px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -501,9 +466,7 @@ p.p-contact {
   line-height: 44px;
   text-align: center;
   color: rgba(23, 43, 77, 1);
-  width: 329px;
-  margin-bottom: 60px;
-  margin-left: 20px;
+  margin: 60px 0;
 }
 
 input {
@@ -511,24 +474,21 @@ input {
   border-width: 0 0 1px;
   border-color: rgba(219, 216, 215, 1);
   font-family: 'Inter', sans-serif;
+  width: 100%;
+  padding: 16px;
 }
 
 #name {
-  width: 327px;
-  height: 48px;
   margin-bottom: 24px;
 }
 
 #email {
-  width: 327px;
-  height: 48px;
   margin-bottom: 24px;
 }
 
 #text {
-  width: 327px;
-  height: 114px;
   border: none;
+  width: 100%;
   background-color: rgba(251, 248, 247, 1);
   margin-bottom: 24px;
   font-family: 'inter', sans-serif;
@@ -542,8 +502,7 @@ input {
 }
 
 .contact-btn {
-  width: 131px;
-  height: 48px;
+  padding: 14px;
   background-color: rgba(255, 107, 0, 1);
   color: white;
   font-size: 17px;
@@ -558,8 +517,14 @@ input {
 }
 
 .contact-btn:hover {
-  background-color: bisque;
-  color: black;
+  background-color: rgb(255, 245, 224);
+  color: rgb(245, 88, 0);
+  border: 2px solid rgb(245, 88, 0);
+}
+
+.contact:active {
+  background-color: rgb(224, 83, 4);
+  color: rgba(255, 245, 224);
 }
 
 form {
@@ -580,4 +545,510 @@ hr {
   align-self: center;
   border-radius: 10px;
   background-color: black;
+}
+
+.title hr {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 60px;
+  margin-top: 24px;
+}
+
+.lastline {
+  display: none;
+}
+
+/* desktop-version */
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    display: none;
+  }
+
+  .hambuger {
+    display: none;
+  }
+
+  .logo {
+    width: 92px;
+    height: 20px;
+    left: 24px;
+    color: white;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    margin-left: 154px;
+    text-decoration: none;
+  }
+
+  .menu {
+    display: flex;
+    padding: 20px 154px 0 0;
+    font-family: 'inter', sans-serif;
+  }
+
+  .menu .mail-link {
+    margin-top: 3px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .menu-link {
+    padding-right: 30px;
+  }
+
+  .menu-link2 {
+    padding-right: 30px;
+  }
+
+  .menu-link3 {
+    padding-right: 30px;
+  }
+
+  .hambuger .logo {
+    display: none;
+  }
+
+  .primary-text {
+    margin-bottom: 12px;
+  }
+
+  .status-bar {
+    display: none;
+  }
+
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(60, 58, 57);
+    height: 72px;
+  }
+
+  h1 {
+    color: hsl(25, 100%, 50%);
+    font-family: "Crete Round", sans-serif;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .supporting-text {
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: hsl(40, 100%, 94%);
+    margin-bottom: 12px;
+  }
+
+  .description {
+    display: block;
+    width: 566px;
+    font-family: "inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(244, 245, 247, 1);
+  }
+
+  .headline {
+    display: flex;
+    background: rgb(27, 25, 24) url(./images/Illustration-header.png) no-repeat;
+    background-position: right;
+    height: 798px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .hero {
+    padding: 143px;
+    position: relative;
+  }
+
+  .social {
+    position: absolute;
+    left: 40px;
+    top: 143px;
+    transform: translateY(200%);
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    bottom: 187px;
+  }
+
+  .social-icons li {
+    margin: 0;
+  }
+
+  /* work-section */
+
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+  }
+
+  .work-header {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Crete Round", serif;
+    line-height: 52px;
+    padding: 20px 0;
+  }
+
+  .btn-card {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid;
+    padding: 6px 12px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .btn-car {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 10px;
+    background: rgb(255, 255, 255, 0.24);
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .btn-card:hover {
+    opacity: 0.9;
+  }
+
+  .container {
+    display: grid;
+    gap: 50px 0;
+  }
+
+  .project-1 {
+    display: flex;
+  }
+
+  .w-image {
+    width: 517px;
+    margin-right: 24px;
+  }
+
+  .right-block {
+    width: 380px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-family: 'Crete Round', serif;
+    margin: 0 0 24px 0;
+  }
+
+  .p-description {
+    font-size: 15px;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 10px;
+    width: 236px;
+    background: white;
+    align-items: center;
+  }
+
+  li .languages {
+    flex: 1;
+  }
+
+  .card-works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .card button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .card:not(.item1) button {
+    display: none;
+  }
+
+  .item1 {
+    background: url(./images/Img-Placeholder.png) no-repeat;
+  }
+
+  .item2 {
+    background: url(./images/Calender.png) no-repeat;
+  }
+
+  .item3 {
+    background: url(./images/tree.png) no-repeat;
+  }
+
+  .item4 {
+    background: url(./images/portfolio.png) no-repeat;
+    background-size: cover;
+  }
+
+  .item5 {
+    background: url(./images/Calender.png) no-repeat;
+  }
+
+  .item6 {
+    background: url(./images/tree.png) no-repeat;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 16px;
+    height: 100%;
+  }
+
+  .item1 .text-block {
+    z-index: -2;
+  }
+
+  .lang {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    width: 236px;
+    list-style: none;
+
+    /* background: rgba(255, 255, 255, 0.24); */
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+  }
+
+  li .lang {
+    flex: 1;
+    text-align: center;
+    padding: 1px;
+  }
+
+  .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .title hr {
+    height: 1px;
+    width: 64%;
+    margin-left: 20px;
+    margin-bottom: 43px;
+  }
+
+  span {
+    font-size: 40px;
+    color: rgba(28, 26, 25, 1);
+    line-height: 52px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(27, 25, 24);
+  }
+
+  .about-descript {
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 32px;
+    top: 232px;
+  }
+
+  .abt-btn {
+    background: rgba(255, 107, 0, 1);
+    order: 2;
+    height: 48px;
+    margin-top: 24px;
+    margin-bottom: 70px;
+    color: white;
+    font-size: 17px;
+    border: none;
+    font-weight: bold;
+  }
+
+  .about {
+    width: 100%;
+    background-image: url(./images/aboutvec.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 40% 50%;
+  }
+
+  .spaced {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    color: hsl(25, 100%, 50%);
+    height: 79px;
+  }
+
+  .about-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 120px;
+    width: 100%;
+    color: white;
+    border-top: 1px solid white;
+  }
+
+  .about-2 > div {
+    width: 100%;
+  }
+
+  .abt-content {
+    width: 40%;
+    padding-left: 80px;
+  }
+
+  .stacks {
+    padding-top: 0;
+    border: none;
+    margin-bottom: 60px;
+  }
+
+  .stacks ul {
+    align-items: flex-start;
+  }
+
+  .frame ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skills ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .stacks li:first-child {
+    list-style-image: url(./images/polygon.png);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .frame li:first-child {
+    list-style-image: url(./images/square.png);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .skills li:first-child {
+    list-style-image: url(./images/circle.png);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .contact-form {
+    display: flex;
+
+    /* flex-flow: row wrap; */
+    width: 100%;
+    padding: 120px;
+  }
+
+  p.p-contact {
+    margin: 0;
+    width: 54%;
+    text-align: start;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 150px;
+  }
+
+  #name {
+    width: 96%;
+  }
+
+  #email {
+    width: 96%;
+  }
+
+  #text {
+    width: 96%;
+    height: 98px;
+  }
+
+  #bottom {
+    display: none;
+  }
+
+  .lastline {
+    width: 100%;
+    height: 1px;
+  }
+
+  .contact-btn {
+    width: 122px;
+    height: 48px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-section-01 {
+    display: flex;
+  }
 }
