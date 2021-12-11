@@ -266,11 +266,6 @@ li .languages {
   border: 2px solid rgb(245, 88, 0);
 }
 
-.card-btn:active {
-  background-color: rgb(224, 83, 4);
-  color: rgba(255, 245, 224);
-}
-
 .lang {
   display: flex;
   flex-direction: row;
