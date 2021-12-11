@@ -219,11 +219,6 @@ li .languages {
 }
 
 .p-btn:hover {
-  background-color: bisque;
-  color: black;
-}
-
-.p-btn:hover {
   background-color: rgb(255, 245, 224);
   color: rgb(245, 88, 0);
   border: 2px solid rgb(245, 88, 0);
@@ -288,7 +283,6 @@ li .languages {
   background-color: rgba(255, 107, 0, 1);
   box-shadow: 0 5px rgb(158, 153, 153);
   transform: translateY(4px);
-
 }
 
 .lang {
@@ -345,11 +339,6 @@ span {
   border: none;
   font-weight: bold;
   transition: 0.5s;
-}
-
-.abt-btn:hover {
-  background-color: bisque;
-  color: black;
 }
 
 .abt-btn:hover {
