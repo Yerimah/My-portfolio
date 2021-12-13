@@ -15,6 +15,10 @@ Additional description about the project and its features.
 - CSS
 - Figma
 
+## DEMO
+
+https://yerimah.github.io/My-portfolio/
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
