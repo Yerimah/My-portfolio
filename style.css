@@ -609,6 +609,10 @@ hr {
     padding-right: 30px;
   }
 
+  .menu a:hover {
+    color:rgb(224, 83, 4);
+  }
+
   .hambuger .logo {
     display: none;
   }

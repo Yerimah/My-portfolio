@@ -32,9 +32,9 @@
         <a class="logo" href="#">Yerimah</a>   
         <div>
             <ul class="menu">
-                <li class="menu-link"><a href="#">Portfolio</a></li>
-                <li class="menu-link2"><a href="#">About</a></li>
-                <li class="menu-link3"><a href="#">Contact</a></li>
+                <li class="menu-link"><a href="#work-section">Portfolio</a></li>
+                <li class="menu-link2"><a href="#about-section">About</a></li>
+                <li class="menu-link3"><a href="#contact-form">Contact</a></li>
                 <li class="mail-link"><img src="./images/Union.png" alt="mail"></li>
             </ul>
         </div>
@@ -94,6 +94,7 @@
     </section>
 
     <section class="work-section">
+        <a id="work-section"></a>
         <div class="container">
         <div class="title">
             <h2 class="work-header">My Recent works</h2>
@@ -213,6 +214,7 @@
     </section>
 
         <section class="about-section">
+            <a id="about-section"></a>
             <div class="about">
                 <div class="abt-content">
                 <h2 class="spaced">About me</h2>
@@ -258,25 +260,27 @@
 
         <footer>
         <div class="contact-form">
+            <a id="contact-form"></a>
             <div class="contact-section-01">
             <p class="p-contact">I'm always interested in hearing about 
                 new projects, so if you'd like to chat 
                 please get in.</p>
             
         <form action="https://formspree.io/f/mlezeewv" method="POST">
+            <label for="fullname"></label>
             <input 
             type="text" 
             id="name" 
             placeholder="Full name" 
             maxlength="30" 
             name="full-name" required>
-            
+            <label for="email"></label>
             <input 
             type="email" 
             id="email" 
             placeholder="Email address" 
             name="email" required>
-            
+            <label for="message"></label>
             <textarea 
             name="message" 
             id="text" 
