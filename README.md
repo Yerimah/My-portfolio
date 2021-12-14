@@ -4,7 +4,7 @@
 
 This is the setup and mobile version skeleton of my portfolio project
 
-![screen](https://user-images.githubusercontent.com/71140133/143456812-e0592bd4-d582-46e5-99f5-4e4ff3e98255.PNG)
+![new header](https://user-images.githubusercontent.com/71140133/146012386-41bcc0b6-2ac1-4633-ad76-c133085ab583.PNG)
 
 
 Additional description about the project and its features.

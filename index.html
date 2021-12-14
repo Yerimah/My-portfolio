@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BEXXJ8X6R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1BEXXJ8X6R');
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +15,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BEXXJ8X6R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1BEXXJ8X6R');
+    </script>
     <title>Daniel Yerimah's Portfolio</title>
 </head>
 <body>
@@ -32,10 +32,10 @@
         <a class="logo" href="#">Yerimah</a>   
         <div>
             <ul class="menu">
-                <li class="menu-link"><a href="#">Portfolio</a></li>
-                <li class="menu-link2"><a href="#">About</a></li>
-                <li class="menu-link3"><a href="#">Contact</a></li>
-                <li class="mail-link"><img src="./images/Union.png" alt=""></li>
+                <li class="menu-link"><a href="#work-section">Portfolio</a></li>
+                <li class="menu-link2"><a href="#about-section">About</a></li>
+                <li class="menu-link3"><a href="#contact-form">Contact</a></li>
+                <li class="mail-link"><img src="./images/Union.png" alt="mail"></li>
             </ul>
         </div>
     </div>
@@ -47,7 +47,7 @@
          <a class="logo" href="#">Yerimah</a>
         <nav>
             <div class="hambuger">
-                <img src="./images/menu.png" alt=""/>
+                <img src="./images/menu.png" alt="menu"/>
             </div>
         </nav>
         </div>
@@ -70,23 +70,23 @@
         <div class="social">
             <ul class="social-icons">
                 <li>
-                    <a href="#"><img src="./images/github.png" alt=""/></a>
+                    <a href="#"><img src="./images/github.png" alt="github link"/></a>
                 </li>
 
                 <li>
-                    <a href="#"><img src="./images/Linkedin.png" alt=""/></a>
+                    <a href="#"><img src="./images/Linkedin.png" alt="Linkedin link"/></a>
                 </li>
 
                 <li>
-                    <a href="#"><img src="./images/angelist.png" alt=""/></a>
+                    <a href="#"><img src="./images/angelist.png" alt="angelist link"/></a>
                 </li>
 
                 <li>
-                    <a href="#"><img src="./images/twitter.png" alt=""/></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter link"/></a>
                 </li>
 
                 <li>
-                    <a href="#"><img src="./images/medium.png" alt=""/></a>
+                    <a href="#"><img src="./images/medium.png" alt="medium link"/></a>
                 </li>
             </ul>
             </div>
@@ -94,15 +94,16 @@
     </section>
 
     <section class="work-section">
+        <a id="work-section"></a>
         <div class="container">
         <div class="title">
             <h2 class="work-header">My Recent works</h2>
             <hr>
         </div>
         <div class="project-1">
-            <img class="w-image" src="./images/placeholder.png" alt=""/>
+            <img class="w-image" src="./images/placeholder.png" alt="first project image"/>
             <div class="right-block">
-            <h2>Multi-Post Stories</h2>
+            <h3>Multi-Post Stories</h3>
             <p class="p-description">A daily selection of privately personalized reads; no accounts or sign-ups required. 
                 has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a standard dummy text.</p>
@@ -213,6 +214,7 @@
     </section>
 
         <section class="about-section">
+            <a id="about-section"></a>
             <div class="about">
                 <div class="abt-content">
                 <h2 class="spaced">About me</h2>
@@ -258,25 +260,27 @@
 
         <footer>
         <div class="contact-form">
+            <a id="contact-form"></a>
             <div class="contact-section-01">
             <p class="p-contact">I'm always interested in hearing about 
                 new projects, so if you'd like to chat 
                 please get in.</p>
             
         <form action="https://formspree.io/f/mlezeewv" method="POST">
+            <label for="name"></label>
             <input 
             type="text" 
             id="name" 
             placeholder="Full name" 
             maxlength="30" 
             name="full-name" required>
-            
+            <label for="email"></label>
             <input 
             type="email" 
             id="email" 
             placeholder="Email address" 
             name="email" required>
-            
+            <label for="text"></label>
             <textarea 
             name="message" 
             id="text" 
@@ -290,23 +294,23 @@
         <hr class="lastline">
         <ul class="contact-icons">
             <li>
-                <a href="#"><img src="./images/darkgit.png" alt=""/></a>
+                <a href="#"><img src="./images/darkgit.png" alt="github link"/></a>
             </li>
 
             <li>
-                <a href="#"><img src="./images/darklinked.png" alt=""/></a>
+                <a href="#"><img src="./images/darklinked.png" alt="Linkedin link"/></a>
             </li>
 
             <li>
-                <a href="#"><img src="./images/darkangel.png" alt=""/></a>
+                <a href="#"><img src="./images/darkangel.png" alt="angelist link"/></a>
             </li>
 
             <li>
-                <a href="#"><img src="./images/Disabled.png" alt=""/></a>
+                <a href="#"><img src="./images/Disabled.png" alt="twitter link"/></a>
             </li>
 
             <li>
-                <a href="#"><img src="./images/darkmedium.png" alt=""/></a>
+                <a href="#"><img src="./images/darkmedium.png" alt="medium link"/></a>
             </li>
         </ul>
           <hr id="bottom">
