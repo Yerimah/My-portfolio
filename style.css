@@ -67,11 +67,11 @@ body {
   font-weight: 700;
   font-family: 'inter', sans-serif;
   font-size: 32px;
-  line-height: 44px
+  line-height: 44px;
 }
 
 .menu-list {
-  border-bottom: 0.5px solid #6F6C6B;
+  border-bottom: 0.5px solid #6f6c6b;
 }
 
 .hambug-items {

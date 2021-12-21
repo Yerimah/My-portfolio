@@ -1,16 +1,15 @@
-let hamburger = document.querySelector('#hamburger');
-let closetog = document.querySelector('#togclose');
-let toggleMenu = document.querySelector('.toggle-menu');
-
-hamburger.addEventListener('click', show)
-closetog.addEventListener('click', close)
+const hamburger = document.querySelector('#hamburger');
+const closetog = document.querySelector('#togclose');
+const toggleMenu = document.querySelector('.toggle-menu');
 
 function show() {
-    toggleMenu.style.display ='flex';
-    toggleMenu.style.top ='0';
-
+  toggleMenu.style.display = 'flex';
+  toggleMenu.style.top = '0';
 }
 
-function close () {
-    toggleMenu.style.top ='-100%';
+function close() {
+  toggleMenu.style.top = '-100%';
 }
+
+hamburger.addEventListener('click', show);
+closetog.addEventListener('click', close);
