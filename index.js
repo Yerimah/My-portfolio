@@ -21,7 +21,7 @@ let cardWorks = [
  {
      id: "1",
      name: "Professional Art",
-     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
      technologies: ['html', 'bootstrap', 'Ruby'],
      image: "images/popup-image.png",
      liveLink: "#",
@@ -43,7 +43,7 @@ let cardWorks = [
     name: "Professional Art",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "background: url(./images/portfolio.png)",
+    image: "images/Calender.png",
     liveLink: "#",
     sourceLink: "#"
  },
@@ -53,7 +53,7 @@ let cardWorks = [
     name: "Professional Art",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "background: url(./images/portfolio.png)",
+    image: "images/tree.png",
     liveLink: "#",
     sourceLink: "https://github.com/Yerimah/My-portfolio.git"
  },
@@ -63,7 +63,7 @@ let cardWorks = [
     name: "Professional Art",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "background: url(./images/portfolio.png)",
+    image: "images/portfolio.png",
     liveLink: "#",
     sourceLink: "https://github.com/Yerimah/My-portfolio.git"
  },
@@ -73,7 +73,7 @@ let cardWorks = [
     name: "Professional Art",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "background: url(./images/portfolio.png)",
+    image: "images/Calender.png",
     liveLink: "#",
     sourcelink: "https://github.com/Yerimah/My-portfolio.git"
     
@@ -106,10 +106,14 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     title.classList.add('pop-title');
     title.textContent = displayedArray[i].name;
     container.appendChild(title);
-
+   const headContainer = document.createElement('div');
+   container.insertBefore(headContainer,img);
+   headContainer.className = 'headContainer';
+   
     const ul = document.createElement('ul');
     ul.classList.add('pop-list');
     container.appendChild(ul);
+    headContainer.append(title,ul);
     const listItem1 = document.createElement('li');
     listItem1.textContent = displayedArray[i].technologies[0];
     listItem1.classList.add('pop-cell');
@@ -127,6 +131,13 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     description.classList.add('pop-description');
     description.textContent = displayedArray[i].description;
     container.appendChild(description);
+   const btnTxtContainer = document.createElement('div');
+   container.appendChild(btnTxtContainer);
+   btnTxtContainer.className = 'btn-text';
+
+   const imgTxtContainer = document.createElement('div');
+   container.appendChild(imgTxtContainer);
+   imgTxtContainer.className = 'img-text';
 
     const linkContainer = document.createElement('div');
     linkContainer.classList.add('link-container');
@@ -156,6 +167,8 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     sourceLink.href = displayedArray[i].sourceLink;
     sourceLink.classList.add('pop');
     linkContainer.append(liveLink, sourceLink);
+   btnTxtContainer.append(description, linkContainer);
+   imgTxtContainer.append(btnTxtContainer, img);
 
     const closeTag = document.createElement('img');
     closeTag.src = 'images/closetoggle.png';

@@ -201,7 +201,7 @@ h1 {
 
 .pop-image {
   width: 100%;
-  order: 3;
+  order: 2;
 }
 
 .pop-description {
@@ -210,10 +210,11 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  height: 150px;
-
 }
-
+.img-text {
+  display: flex;
+  flex-flow: column-reverse;
+}
 .link-container {
   display:flex;
   order: 6;
@@ -223,6 +224,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 8px;
+  height: 48px;
   color: white;
   background-color: #FF6B00;
   text-decoration: none;
@@ -1187,5 +1189,54 @@ hr {
 
   .contact-section-01 {
     display: flex;
+  }
+
+  .pop-up {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 90vh;
+  }
+
+  .headContainer {
+    display: flex;
+    flex-flow: column;
+  }
+
+
+  .pop-description {
+    
+  }
+
+  .pop-list {
+    margin: 0;
+  }
+
+  .img-text {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .btn-text {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .link-container {
+    margin-top: 50px;
+  }
+
+  .pop-close {
+    width: 1%;
+    top: 6%;
+  }
+
+  .popup-window {
+    padding: 22px;
+    height: 100vh;
+  }
+
+  .pop-image {
+    width: 70vw;
   }
 }
