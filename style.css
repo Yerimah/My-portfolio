@@ -150,6 +150,7 @@ h1 {
 }
 
 /* work-section */
+
 /* popup-window styles */
 .popup-window {
   position: fixed;
@@ -172,7 +173,6 @@ h1 {
   width: 90%;
   top: 25px;
   position: relative;
-  
 }
 
 .pop-list {
@@ -185,16 +185,16 @@ h1 {
 .pop-cell {
   margin-right: 10px;
   border: 1px solid #3c3a39;
-  padding: 0 16px;
-  font-size: 16px;
+  padding: 0 7px;
+  font-size: 13px;
 }
 
 .pop-title {
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   order: 1;
   margin-bottom: 5px;
 }
@@ -211,12 +211,14 @@ h1 {
   font-size: 16px;
   line-height: 24px;
 }
+
 .img-text {
   display: flex;
   flex-flow: column-reverse;
 }
+
 .link-container {
-  display:flex;
+  display: flex;
   order: 6;
 }
 
@@ -226,7 +228,7 @@ h1 {
   padding: 8px;
   height: 48px;
   color: white;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   text-decoration: none;
   margin-right: 19px;
   font-weight: 700;
@@ -1202,11 +1204,6 @@ hr {
     flex-flow: column;
   }
 
-
-  .pop-description {
-    
-  }
-
   .pop-list {
     margin: 0;
   }
@@ -1219,6 +1216,7 @@ hr {
   .btn-text {
     margin-left: 20px;
     display: flex;
+    width: fit-content;
     flex-flow: column;
   }
 
@@ -1234,9 +1232,5 @@ hr {
   .popup-window {
     padding: 22px;
     height: 100vh;
-  }
-
-  .pop-image {
-    width: 70vw;
   }
 }

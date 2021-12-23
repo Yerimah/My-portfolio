@@ -3,8 +3,8 @@ const closetog = document.querySelector('#togclose');
 const toggleMenu = document.querySelector('.toggle-menu');
 
 function show() {
-toggleMenu.style.display = 'flex';
-toggleMenu.style.top = '0';
+  toggleMenu.style.display = 'flex';
+  toggleMenu.style.top = '0';
 }
 
 function close() {
@@ -16,68 +16,68 @@ closetog.addEventListener('click', close);
 
 document.querySelectorAll('.menu-list').forEach((link) => link.addEventListener('click', close));
 
-let cardWorks = [
+const cardWorks = [
 
- {
-     id: "1",
-     name: "Professional Art",
-     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-     technologies: ['html', 'bootstrap', 'Ruby'],
-     image: "images/popup-image.png",
-     liveLink: "#",
-     sourceLink: "https://github.com/Yerimah/My-portfolio.git"
- },
+  {
+    id: '1',
+    name: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/popup-image.png',
+    liveLink: '#',
+    sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
+  },
 
- {
-    id: "2",
-    name: "Professional Art",
+  {
+    id: '2',
+    name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "images/popup-image.png",
-    liveLink: "#",
-    sourceLink: "https://github.com/Yerimah/My-portfolio.git"
- },
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/popup-image.png',
+    liveLink: '#',
+    sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
+  },
 
- {
-    id: "3",
-    name: "Professional Art",
+  {
+    id: '3',
+    name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "images/Calender.png",
-    liveLink: "#",
-    sourceLink: "#"
- },
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/Calender.png',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
- {
-    id: "4",
-    name: "Professional Art",
+  {
+    id: '4',
+    name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "images/tree.png",
-    liveLink: "#",
-    sourceLink: "https://github.com/Yerimah/My-portfolio.git"
- },
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/tree.png',
+    liveLink: '#',
+    sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
+  },
 
- {
-    id: "5",
-    name: "Professional Art",
+  {
+    id: '5',
+    name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "images/portfolio.png",
-    liveLink: "#",
-    sourceLink: "https://github.com/Yerimah/My-portfolio.git"
- },
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/portfolio.png',
+    liveLink: '#',
+    sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
+  },
 
- {
-    id: "6",
-    name: "Professional Art",
+  {
+    id: '6',
+    name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    image: "images/Calender.png",
-    liveLink: "#",
-    sourcelink: "https://github.com/Yerimah/My-portfolio.git"
-    
- }
+    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    image: 'images/Calender.png',
+    liveLink: '#',
+    sourcelink: 'https://github.com/Yerimah/My-portfolio.git',
+
+  },
 ];
 
 const projectButton = document.querySelectorAll('.card-btn');
@@ -106,22 +106,22 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     title.classList.add('pop-title');
     title.textContent = displayedArray[i].name;
     container.appendChild(title);
-   const headContainer = document.createElement('div');
-   container.insertBefore(headContainer,img);
-   headContainer.className = 'headContainer';
-   
+    const headContainer = document.createElement('div');
+    container.insertBefore(headContainer, img);
+    headContainer.className = 'headContainer';
+
     const ul = document.createElement('ul');
     ul.classList.add('pop-list');
     container.appendChild(ul);
-    headContainer.append(title,ul);
+    headContainer.append(title, ul);
     const listItem1 = document.createElement('li');
-    listItem1.textContent = displayedArray[i].technologies[0];
+    listItem1.textContent = displayedArray[i].technologies;
     listItem1.classList.add('pop-cell');
     const listItem2 = document.createElement('li');
-    listItem2.textContent = displayedArray[i].technologies[1];
+    listItem2.textContent = displayedArray[i].technologies;
     listItem2.classList.add('pop-cell');
     const listItem3 = document.createElement('li');
-    listItem3.textContent = displayedArray[i].technologies[2];
+    listItem3.textContent = displayedArray[i].technologies;
     listItem3.classList.add('pop-cell');
     ul.appendChild(listItem1);
     ul.appendChild(listItem2);
@@ -131,13 +131,13 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     description.classList.add('pop-description');
     description.textContent = displayedArray[i].description;
     container.appendChild(description);
-   const btnTxtContainer = document.createElement('div');
-   container.appendChild(btnTxtContainer);
-   btnTxtContainer.className = 'btn-text';
+    const btnTxtContainer = document.createElement('div');
+    container.appendChild(btnTxtContainer);
+    btnTxtContainer.className = 'btn-text';
 
-   const imgTxtContainer = document.createElement('div');
-   container.appendChild(imgTxtContainer);
-   imgTxtContainer.className = 'img-text';
+    const imgTxtContainer = document.createElement('div');
+    container.appendChild(imgTxtContainer);
+    imgTxtContainer.className = 'img-text';
 
     const linkContainer = document.createElement('div');
     linkContainer.classList.add('link-container');
@@ -167,8 +167,8 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     sourceLink.href = displayedArray[i].sourceLink;
     sourceLink.classList.add('pop');
     linkContainer.append(liveLink, sourceLink);
-   btnTxtContainer.append(description, linkContainer);
-   imgTxtContainer.append(btnTxtContainer, img);
+    btnTxtContainer.append(description, linkContainer);
+    imgTxtContainer.append(btnTxtContainer, img);
 
     const closeTag = document.createElement('img');
     closeTag.src = 'images/closetoggle.png';
