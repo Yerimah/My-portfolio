@@ -1217,7 +1217,8 @@ hr {
     margin-left: 20px;
     display: flex;
     width: fit-content;
-    flex-flow: column;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .link-container {

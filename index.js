@@ -160,7 +160,7 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     const liveIcon = document.createElement('img');
     liveIcon.classList.add('popIcon');
     liveIcon.src = 'images/livepop.png';
-    liveIcon.alt = ' ';
+    liveIcon.alt = 'view portfolio icon ';
     liveLink.setAttribute('target', '_blank');
     liveLink.appendChild(linkText1);
     liveLink.appendChild(liveIcon);
@@ -172,7 +172,7 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     const sourceIcon = document.createElement('img');
     sourceIcon.classList.add('popIcon');
     sourceIcon.src = 'images/popgit.png';
-    sourceIcon.alt = ' ';
+    sourceIcon.alt = 'github icon ';
     sourceLink.setAttribute('target', '_blank');
     sourceLink.appendChild(linkText2);
     sourceLink.appendChild(sourceIcon);
