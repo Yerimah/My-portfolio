@@ -225,7 +225,7 @@ h1 {
 .pop {
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 9px;
   height: 48px;
   color: white;
   background-color: #ff6b00;
@@ -235,7 +235,7 @@ h1 {
 }
 
 .popIcon {
-  margin-left: 16px;
+  margin-left: 6px;
 }
 
 .pop-close {
@@ -1221,7 +1221,7 @@ hr {
   }
 
   .link-container {
-    margin-top: 50px;
+    margin-top: 157px;
   }
 
   .pop-close {

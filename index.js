@@ -22,7 +22,9 @@ const cardWorks = [
     id: '1',
     name: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/popup-image.png',
     liveLink: '#',
     sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
@@ -32,7 +34,9 @@ const cardWorks = [
     id: '2',
     name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/popup-image.png',
     liveLink: '#',
     sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
@@ -42,7 +46,9 @@ const cardWorks = [
     id: '3',
     name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/Calender.png',
     liveLink: '#',
     sourceLink: '#',
@@ -52,7 +58,9 @@ const cardWorks = [
     id: '4',
     name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/tree.png',
     liveLink: '#',
     sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
@@ -62,7 +70,9 @@ const cardWorks = [
     id: '5',
     name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/portfolio.png',
     liveLink: '#',
     sourceLink: 'https://github.com/Yerimah/My-portfolio.git',
@@ -72,7 +82,9 @@ const cardWorks = [
     id: '6',
     name: 'Professional Art',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['html', 'bootstrap', 'Ruby on rails'],
+    listItem1: 'html',
+    listItem2: 'bootstrap',
+    listItem3: 'Ruby on rails',
     image: 'images/Calender.png',
     liveLink: '#',
     sourcelink: 'https://github.com/Yerimah/My-portfolio.git',
@@ -115,13 +127,13 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
     container.appendChild(ul);
     headContainer.append(title, ul);
     const listItem1 = document.createElement('li');
-    listItem1.textContent = displayedArray[i].technologies;
+    listItem1.textContent = displayedArray[i].listItem1;
     listItem1.classList.add('pop-cell');
     const listItem2 = document.createElement('li');
-    listItem2.textContent = displayedArray[i].technologies;
+    listItem2.textContent = displayedArray[i].listItem2;
     listItem2.classList.add('pop-cell');
     const listItem3 = document.createElement('li');
-    listItem3.textContent = displayedArray[i].technologies;
+    listItem3.textContent = displayedArray[i].listItem3;
     listItem3.classList.add('pop-cell');
     ul.appendChild(listItem1);
     ul.appendChild(listItem2);
