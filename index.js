@@ -201,7 +201,7 @@ form.addEventListener('submit', (e) => {
   const lowerCase = emailValue.toLowerCase();
 
   if (!emailValue.match(lowerCase)) {
-    e.preventDefault();
+
     errorMsg.innerHTML = 'You entered an invalid email. please make it all lowercase';
   }
 });
