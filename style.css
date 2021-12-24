@@ -165,8 +165,9 @@ h1 {
 
 .pop-up {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-direction: column;
+  max-height: 95vh;
+  overflow: auto;
   align-items: flex-start;
   background-color: white;
   padding: 20px;
