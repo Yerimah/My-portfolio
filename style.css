@@ -151,6 +151,102 @@ h1 {
 
 /* work-section */
 
+/* popup-window styles */
+.popup-window {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1111;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  max-height: 95vh;
+  overflow: auto;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  top: 25px;
+  position: relative;
+}
+
+.pop-list {
+  display: flex;
+  flex-flow: row;
+  order: 2;
+  margin-top: 60px;
+}
+
+.pop-cell {
+  margin-right: 10px;
+  border: 1px solid #3c3a39;
+  padding: 0 7px;
+  font-size: 13px;
+}
+
+.pop-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  order: 1;
+  margin-bottom: 5px;
+}
+
+.pop-image {
+  width: 100%;
+  order: 2;
+}
+
+.pop-description {
+  order: 4;
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.img-text {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.link-container {
+  display: flex;
+  order: 6;
+}
+
+.pop {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  height: 48px;
+  color: white;
+  background-color: #ff6b00;
+  text-decoration: none;
+  margin-right: 19px;
+  font-weight: 700;
+}
+
+.popIcon {
+  margin-left: 6px;
+}
+
+.pop-close {
+  width: 4%;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 6%;
+}
+
 .work-section {
   display: flex;
   flex-direction: column;
@@ -162,8 +258,6 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   padding: 20px 0;
-
-  /* margin-top: 120px; */
 }
 
 h3 {
@@ -1098,5 +1192,47 @@ hr {
 
   .contact-section-01 {
     display: flex;
+  }
+
+  .pop-up {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 90vh;
+  }
+
+  .headContainer {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .pop-list {
+    margin: 0;
+  }
+
+  .img-text {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .btn-text {
+    margin-left: 20px;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .link-container {
+    margin-top: 157px;
+  }
+
+  .pop-close {
+    width: 1%;
+    top: 6%;
+  }
+
+  .popup-window {
+    padding: 22px;
+    height: 100vh;
   }
 }
