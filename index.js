@@ -193,16 +193,15 @@ projectButton.forEach((el) => el.addEventListener('click', () => {
 }));
 
 const email = document.getElementById('email');
-  const form = document.getElementById('form');
-  const errorMsg = document.getElementById('error')
+const form = document.getElementById('form');
+const errorMsg = document.getElementById('error');
 
-  form.addEventListener('submit', (e) => {
-     const emailValue = email.value.trim();
-     const lowerCase = emailValue.toLowerCase();
+form.addEventListener('submit', (e) => {
+  const emailValue = email.value.trim();
+  const lowerCase = emailValue.toLowerCase();
 
-     if(!emailValue.match(lowerCase)) {
-        e.preventDefault();
-        errorMsg.innerHTML = 'You entered an invalid email. please make it all lowercase'
-     }
-
-  })
+  if (!emailValue.match(lowerCase)) {
+    e.preventDefault();
+    errorMsg.innerHTML = 'You entered an invalid email. please make it all lowercase';
+  }
+});
